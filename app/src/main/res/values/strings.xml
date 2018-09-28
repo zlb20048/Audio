@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_lable_name">音乐播放器</string>
+    <string name="app_music">音乐播放器</string>
+
+    <string name="tracks_title">"歌曲"</string>
+    <string name="artists_title">"歌手"</string>
+    <string name="albums_title">"专辑"</string>
+
+    <string name="play_all">播放全部</string>
+
+    <string name="all_source">文件</string>
+    <string name="local_source">本地</string>
+    <string name="unknown_artist_name">未知歌手名</string>
+    <string name="unknown_track_name">"未知歌曲名"</string>
+    <string name="unknown_album_name">未知专辑名</string>
+
+    <string name="data_loading_text">数据载入中 ...</string>
+    <string name="no_media_text">"无可播放文件"</string>
+
+    <string name="my_device">我的设备</string>
+    <string name="is_seeking_music">Seeking music , please wait...</string>
+
+</resources>

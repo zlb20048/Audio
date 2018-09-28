@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+
+    <!-- Chleon right Pannel -->
+
+    <color name="text_theme_color">#ff4dbef6</color>
+
+    <color name="media_control_artist_album_text_color">#a7a7a7</color>
+</resources>

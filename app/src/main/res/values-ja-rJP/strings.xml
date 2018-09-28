@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_lable_name">音楽プレーヤ</string>
+    <string name="all_source">ファイル</string>
+    <string name="app_music">音楽プレーヤ</string>
+    <string name="data_loading_text">数据载入中 ...</string>
+    <string name="local_source">リスト</string>
+    <string name="my_device">マイデイバイス</string>
+    <string name="no_media_text">ファイルありません</string>
+    <string name="play_all">全て再生</string>
+    <string name="unknown_album_name">未知アルバム名</string>
+    <string name="unknown_artist_name">未知歌手</string>
+    <string name="unknown_track_name">未知曲名</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+    <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp">
+
+        <SeekBar
+                android:id="@+id/mediacontroller_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:max="100"
+                android:progress="0"
+                android:maxHeight="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/light"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/progressLayout"
+            android:paddingLeft="8dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small_size"/>
+
+    <TextView
+            android:id="@+id/time_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/progressLayout"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:text="00:00"
+            android:textSize="@dimen/text_small_size"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressLayout"
+            android:layout_marginTop="15dp">
+
+        <ImageButton
+                android:id="@+id/folderbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/repeat"
+                android:nextFocusRight="@+id/prev"
+                android:src="@drawable/music_folder_selector"/>
+
+        <ImageButton
+                android:id="@+id/repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dip"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/next"
+                android:nextFocusRight="@+id/folderbtn"
+                android:src="@drawable/repeatall_selector"/>
+
+        <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/play_pause_margin"
+                android:layout_marginRight="@dimen/play_pause_margin"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/prev"
+                android:nextFocusRight="@+id/next"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pause_selector"/>
+
+        <ImageButton
+                android:id="@+id/prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/pause"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/folderbtn"
+                android:nextFocusRight="@+id/pause"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pre_selector"/>
+
+        <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/pause"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/pause"
+                android:nextFocusRight="@+id/repeat"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/next_selector"/>
+
+        <ImageButton
+                android:id="@+id/rwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dip"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/prev"
+                android:nextFocusRight="@+id/pause"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/rwd_drawable"
+                android:visibility="gone"/>
+
+        <ImageButton
+                android:id="@+id/ffwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dip"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:nextFocusLeft="@+id/pause"
+                android:nextFocusRight="@+id/next"
+                android:padding="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pre_selector"
+                android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

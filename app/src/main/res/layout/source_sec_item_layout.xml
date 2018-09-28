@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/text_item_height"
+    android:paddingLeft="@dimen/list_item_pad"
+    android:paddingRight="@dimen/list_item_pad"
+    android:orientation="horizontal"
+    android:background="@drawable/source_item_selector" >
+
+    <ImageView
+        android:id="@+id/sec_source_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/listgoto_selector" />
+
+    <TextView
+        android:id="@+id/sec_source_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/app_lable_name"
+        android:textColor="@drawable/list_item_text_color_selector"
+        android:textSize="@dimen/list_item_text_primary_size" />
+
+</RelativeLayout>

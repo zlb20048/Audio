@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/folder_item_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+    <com.kallaite.media.fragment.component.MarqueeTextView
+            android:id="@+id/prim_source_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="@dimen/text_second_size"
+            android:layout_marginLeft="80dp"
+            android:textColor="@drawable/source_text_color_selector"
+            android:text="@string/app_music"/>
+
+</RelativeLayout>
